@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>បញ្ជីសៀវភៅ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .book a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .book a:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .book h2 {
+                font-size: 1em;
+            }
+
+            .book a {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            .book {
+                max-width: 100%;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>សៀវភៅបណ្ឌិតសភាចារ្យ ខ្លូត ធីតា</h1>
+    <div class="book-list">
+        <div class="book">
+            <img src="cover item/1.jpg" alt="ព្រះពុទ្ធបដិមានៅកម្ពុជា">
+            <h2>ព្រះពុទ្ធបដិមានៅកម្ពុជា</h2>
+            <a href="https://drive.google.com/file/d/1AT9xXze1S36mf_V1C2qz4e2O5Nd6O-_f/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/2.jpg" alt="គតិបណ្ឌិតសម្រាប់ពុទ្ធសាសនិក">
+            <h2>គតិបណ្ឌិតសម្រាប់ពុទ្ធសាសនិក</h2>
+            <a href="https://drive.google.com/file/d/1xUh3OID4HAAufC7l7Puv9DtTQFEDSONF/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/3.jpg" alt="ការស្វែងយល់អំពីការវិវត្តព្រះពុទ្ធសាសនានៅក្នុងសង្គមខ្មែរ">
+            <h2>ការស្វែងយល់អំពីការវិវត្តព្រះពុទ្ធសាសនានៅក្នុងសង្គមខ្មែរ</h2>
+            <a href="https://drive.google.com/file/d/1G0nrMfhRz-I_-B8LKOG5OvFpljNr85VE/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/4.jpg" alt="សន្និសីទជាតិស្ដីពីតម្លៃមនុស្ស">
+            <h2>សន្និសីទជាតិស្ដីពីតម្លៃមនុស្ស</h2>
+            <a href="https://drive.google.com/file/d/10Xcgn_IOR5B6Zqc4K0sjov8KH3ZaKkgl/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/5.jpg" alt="គម្ពីរព្រះត្រៃបិដក ភាគទី១">
+            <h2>គម្ពីរព្រះត្រៃបិដក ភាគទី១</h2>
+            <a href="https://drive.google.com/file/d/1xIyF4QOl4r5jnUJt0joQnohpcK8QywxZ/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/6.jpg" alt="គម្ពីរព្រះត្រៃបិដក ភាគទី២">
+            <h2>គម្ពីរព្រះត្រៃបិដក ភាគទី២</h2>
+            <a href="https://drive.google.com/file/d/1yUWMP8HeOeeum0voAftit60C9v_wGNUm/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/7.jpg" alt="អរិយទ្រព្យដ៏ប្រសើររបស់មនុស្ស">
+            <h2>អរិយទ្រព្យដ៏ប្រសើររបស់មនុស្ស</h2>
+            <a href="https://drive.google.com/file/d/1DObGdUBBmdxs5KCvoc0nr2LgTsi1ot0l/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/8.jpg" alt="សមាទានសិល៥">
+            <h2>សមាទានសិល៥</h2>
+            <a href="https://drive.google.com/file/d/1ZzgAuZRstKx_ujnjeLG0Kf562K2lGpQX/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/9.jpg" alt="ឫសគល់នៃទស្សនវិជ្ជាច្បាប់ខ្មែរ">
+            <h2>ឫសគល់នៃទស្សនវិជ្ជាច្បាប់ខ្មែរ</h2>
+            <a href="https://drive.google.com/file/d/1386GH-e22-7uCEfzstPZKo3VFynlac9H/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/10.jpg" alt="សាសនាសកល">
+            <h2>សាសនាសកល</h2>
+            <a href="https://drive.google.com/file/d/1xHYLo4aoW59VIbbVK2fHwQKjblo5F1Ln/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/11.jpg" alt="ទស្សនវិជ្ជាប្រវត្តិសាស្រ្ដខ្មែរ សម័យបុរេប្រវត្តិ នគរភ្នំ និងចេនឡា">
+            <h2>ទស្សនវិជ្ជាប្រវត្តិសាស្រ្ដខ្មែរ សម័យបុរេប្រវត្តិ នគរភ្នំ និងចេនឡា</h2>
+            <a href="https://drive.google.com/file/d/1XLneal2W4rwSrEKuGwsE7T9L6bJq-2Y5/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/12.jpg" alt="ទស្សនវិជ្ជាខ្មែរសម័យអង្គរ">
+            <h2>ទស្សនវិជ្ជាខ្មែរសម័យអង្គរ</h2>
+            <a href="https://drive.google.com/file/d/1hpQHcCyoZUrh9j7FJzJud8p5zYYPM1XH/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/13.jpg" alt="ទស្សនវិជ្ជាខ្មែរសម័យចតុមុខ លង្វែក ឧដុង្គ និងបារាំង">
+            <h2>ទស្សនវិជ្ជាខ្មែរសម័យចតុមុខ លង្វែក ឧដុង្គ និងបារាំង</h2>
+            <a href="https://drive.google.com/file/d/1JuPJguPv_v_441GUkkAq4EwYyNfGgyRH/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/14.jpg" alt="មូលដ្ឋានគ្រឹះនៃសីលវិទ្យាសកលលោក">
+            <h2>មូលដ្ឋានគ្រឹះនៃសីលវិទ្យាសកលលោក</h2>
+            <a href="https://drive.google.com/file/d/1pw03FL5PnMXvGmeE1PNF9Jv2AMm8Rpqi/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/15.jpg" alt="គម្ពីរពិសិដ្ឋរបស់បូព៌ាប្រទេសច្បាប់មនុ">
+            <h2>គម្ពីរពិសិដ្ឋរបស់បូព៌ាប្រទេសច្បាប់មនុ</h2>
+            <a href="https://drive.google.com/file/d/1eCnYjWaqP0eZmrz2QNhU3ZA6XIbmFcYu/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/16.jpg" alt="គតិលោក អត្ថបទវិភាគថ្មី">
+            <h2>គតិលោក អត្ថបទវិភាគថ្មី</h2>
+            <a href="https://drive.google.com/file/d/1ICncOlynvfKlzhHoq9w1C7us56SzPWKr/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/17.jpg" alt="សម្លៀកបំពាក់ខ្មែរសម័យបុរាណ">
+            <h2>សម្លៀកបំពាក់ខ្មែរសម័យបុរាណ</h2>
+            <a href="https://drive.google.com/file/d/1pGVvfd5WOlZWuyGxug8lJCuEeoY0FnBp/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/18.jpg" alt="អាចារ្យក្នុងសង្គមខ្មែរបច្ចុប្បន្ន">
+            <h2>អាចារ្យក្នុងសង្គមខ្មែរបច្ចុប្បន្ន</h2>
+            <a href="https://drive.google.com/file/d/11rAckyAIYMiYC6fciZBdCFCd0oe3HJvX/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/20.png" alt="ទស្សនាវដ្ដីប្រចាំឆមាស ពន្លឺសមាគមទស្សនវិជ្ជាខ្មែរ">
+            <h2>ទស្សនាវដ្ដីប្រចាំឆមាស ពន្លឺសមាគមទស្សនវិជ្ជាខ្មែរ</h2>
+            <a href="https://drive.google.com/file/d/1SaZt8fbdkXbSsXBPjAfEyWhA9CI2dlFt/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/24.png" alt="គោរមងារសម្ដេចតេជោ">
+            <h2>គោរមងារសម្ដេចតេជោ</h2>
+            <a href="https://drive.google.com/file/d/1SOzallVc1C-OTJgFUC3Qu_0rGat0YlOP/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/21.png"
+                alt="លោកជំទាវ ប៊ុន រ៉ានី ហ៊ុន សែន ប្រធានកាកបាទក្រហមកម្ពុជា ជាកត្តិព្រឹទ្ធបណ្ឌិត">
+            <h2>លោកជំទាវ ប៊ុន រ៉ានី ហ៊ុន សែន ប្រធានកាកបាទក្រហមកម្ពុជា ជាកត្តិព្រឹទ្ធបណ្ឌិត</h2>
+            <a href="https://drive.google.com/file/d/1goKUaoh4f5DXMSfWyQ1s8mvqfGEo4Mn0/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/22.png" alt="គោរមងារព្រះសង្ឃ">
+            <h2>គោរមងារព្រះសង្ឃ</h2>
+            <a href="https://drive.google.com/file/d/1Y9j4Pxvx3_jDzPaVlfr-fJvpgWxN4bnf/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/23.png" alt="គោរមងារឯកឧត្តម គាត ឈន់">
+            <h2>គោរមងារឯកឧត្តម គាត ឈន់</h2>
+            <a href="https://drive.google.com/file/d/1cph8qILPinIIeKuGmQVOkjtUhlMnohuS/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/25.png" alt="គោរមងារសម្ដេច សុខ អាន">
+            <h2>គោរមងារសម្ដេច សុខ អាន</h2>
+            <a href="https://drive.google.com/file/d/1L2hjEPOBsoLBGyGpIg5CyASsItyVffgY/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/26.png" alt="គោរមងារ ឯកឧត្តម ឆាយ សាវុធ">
+            <h2>គោរមងារ ឯកឧត្តម ឆាយ សាវុធ</h2>
+            <a href="https://drive.google.com/file/d/1MRW-48KmJOHfWR6qx09nrrCfM-fXQKy5/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/27.png" alt="គោរមងារ ឯកឧត្តម ពេជ្រ ប៊ុនធិន">
+            <h2>គោរមងារ ឯកឧត្តម ពេជ្រ ប៊ុនធិន</h2>
+            <a href="https://drive.google.com/file/d/1OGLx8iEqUsMljpryJARSmYQakfqJJt-r/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/28.png" alt="សៀវភៅ គោរមងារ ឯកឧត្តម គីម ក្វានយុង">
+            <h2>សៀវភៅ គោរមងារ ឯកឧត្តម គីម ក្វានយុង</h2>
+            <a href="https://drive.google.com/file/d/1FCbG21eJWUm28RF8vs-sjPXLO_Juguca/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/31.png"
+                alt="សៀវភៅ ពិធីអបអរសាទរពិធីប្រគល់សញ្ញាបត្រកិត្តិបណ្ឌិតនៃរាជបណ្ឌិត្យសភាកម្ពុជា
+            ជូន ឯកឧត្តមនាយឧត្តមសេនីយ៍ ហ៊ីង ប៊ុនហៀង អគ្គមេបញ្ជាការរងកងយោធពលខេមរភូមិន្ទ និងជា មេបញ្ជាការនៃបញ្ជាការដ្ឋានអង្គរក្ស">
+            <h2>សៀវភៅ ពិធីអបអរសាទរពិធីប្រគល់សញ្ញាបត្រកិត្តិបណ្ឌិតនៃរាជបណ្ឌិត្យសភាកម្ពុជា
+                ជូន ឯកឧត្តមនាយឧត្តមសេនីយ៍ ហ៊ីង ប៊ុនហៀង អគ្គមេបញ្ជាការរងកងយោធពលខេមរភូមិន្ទ និងជា
+                មេបញ្ជាការនៃបញ្ជាការដ្ឋានអង្គរក្ស</h2>
+            <a href="https://drive.google.com/file/d/1umnSCHmH5a2VCevPA7P5cSPWrSS1vEnr/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/29.png" alt="ព្រះពុទ្ធសាសនានិងពាហិរសាសនាក្នុងសង្គមខ្មែរសម័យប៉ុល ពត ដល់បច្ចុប្បន្ន">
+            <h2>ព្រះពុទ្ធសាសនានិងពាហិរសាសនាក្នុងសង្គមខ្មែរសម័យប៉ុល ពត ដល់បច្ចុប្បន្ន</h2>
+            <a href="https://drive.google.com/file/d/1F_kQzIJswoTQ2th4if20sdGsQBWUuWSL/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/30.jpg" alt="មូលដ្ឋានគ្រឹះនៃទស្សនវិជ្ជា">
+            <h2>មូលដ្ឋានគ្រឹះនៃទស្សនវិជ្ជា</h2>
+            <a href="https://drive.google.com/file/d/1kxcUKllraXJUlRCNpHlW0qrxUi97kQ9g/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+        <div class="book">
+            <img src="cover item/19.jpg" alt="ប្រវត្តិរូបសង្ខេប លោកជំទាវបណ្ឌិតសភាចារ្យ ខ្លូត ធីតា">
+            <h2>ប្រវត្តិរូបសង្ខេប លោកជំទាវបណ្ឌិតសភាចារ្យ ខ្លូត ធីតា</h2>
+            <a href="https://drive.google.com/file/d/1KbmbX99DOtqa59lvwQnlTMyjy0YTYmN3/preview"
+                target="_blank">មើលសៀវភៅ</a>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

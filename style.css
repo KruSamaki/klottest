@@ -1,0 +1,292 @@
+@font-face {
+    font-family: KhmerFont;
+    src: url("font/Kh\ Baphnom\ Limon\ S1.ttf") format("truetype"); /* Replace "KhmerFont.ttf" with the actual font file name and path */
+}
+@font-face {
+    font-family: KhmerTitle;
+    src: url("font/Kh\ Ang\ ChittBous.ttf") format("truetype");
+}
+@font-face {
+    font-family: KhKoulen;
+    src: url("font/Koulen.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: KhmerFont;
+}
+body{
+    background-image: url('img/buddha.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    body {
+      background-attachment:fixed;
+      background-image: url('img/background.jpg');
+    }
+  }
+.icon{
+    font-family: KhmerTitle;
+    font-size: 1px;
+}
+.title_text{
+    font-family: KhmerTitle;
+}
+.title_bar {
+    /* background-color: #EA7B5F;
+    box-shadow: 0px 5px  #694238(128, 128, 128, 0.478); */
+    background: rgb(26,50,54);
+    background: linear-gradient(90deg, rgba(26,50,54,1) 0%, rgba(42,81,80,1) 35%, rgba(74,103,75,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-family:KhmerTitle;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+}
+.menu_button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.title_text {
+    color: white;
+    font-size: 26px;
+}
+.sliding_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f1f1f1;
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100000;
+}
+.menu_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+.sliding_menu.show_menu .menu_cover {
+    display: block;
+}
+.menu_image {
+    width: 100%;
+}
+.menu_image img {
+    width: 100%;
+    height: auto;
+}
+.sliding_menu ul {
+    list-style-type:none;
+    padding: 20px;
+}
+.sliding_menu ul li {
+    margin-bottom: 20px;
+    /* color: #EA7B5F; */
+    
+    font-size: 18px;
+}
+.sliding_menu ul li a{
+    text-decoration: none;
+    font-family:KhKoulen;
+    color:#EA7B5F;
+}
+.sliding_menu ul li p{
+    font-family: KhmerFont;
+}
+.show_menu {
+    transform: translateX(0);
+}
+@media only screen and (max-width: 600px) {
+    .book-library {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media only screen and (max-width: 600px) {
+    .title_text {
+        font-size: 25px;
+    }
+    .menu_button {
+        font-size: 14px;
+    }
+    .sliding_menu {
+        width: 200px;
+    }
+    .sliding_menu ul li {
+        font-size: 16px;
+    }
+}
+.khQR{
+    display: flex;
+    width: 100%;
+}
+/* Book item */
+/* Book item */
+.book-library {
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.book-item {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-item:hover img {
+    transform: scale(1.1);
+}
+
+.book-details {
+    /* position: absolute; */
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.book-title {
+    margin: 0;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: whitesmoke;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 2; 
+}
+.book-title:hover{
+   color:white;
+   text-shadow: 1px 1px yellow;
+   transition: opacity 0.3s ease-in-out;
+   text-decoration: dotted;
+}
+hr{
+    color: gray;
+}
+
+@media only screen and (min-width: 600px) {
+    .book-library {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Popup Box */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .popup-content {
+    position: relative;
+    max-width: 95%;
+    max-height: 95%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .popup-header {
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .popup-title {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-body {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pdf-iframe {
+    width: 100%;
+    height: 100%;
+  }
+  /* Footer */
+  footer {
+    font-family: KhmerFont;
+    background: rgb(26,50,54);
+    background: linear-gradient(90deg, rgba(26,50,54,1) 0%, rgba(42,81,80,1) 35%, rgba(74,103,75,1) 100%);
+    padding: 20px;
+    color: white;
+    box-shadow: 0px -3px rgba(81, 78, 78, 0.389);
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .column {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .column {
+      flex-basis: calc(50% - 10px);
+      margin-bottom: 0;
+    }
+  }
